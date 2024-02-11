@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+   <h1>Imagem Dinamica</h1>
+   <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+   <picture>
+    <source media="(max-width:750px )" srcset="imagens/imgp.png" type="image/png">
+    <source media="(max-width:1050 px )" srcset="imagens/imgm.png" type="image/png">
+    <img src="imagens/imgg.png" alt="imagem flexivel">
+   </picture>
+   <h2>Reproduzindo Audios</h2>
+   <p>Vamos aprender a reproduzir audios em HTML5</p>
+   <audio preload="auto" controls>
+    <source src="midia/mchariel02.mp3" type="audio/mpeg">
+    <source src="midia/mchariel02.ogg" type="audio/ogg">
+    <source src="midia/mchariel02.wav" type="audio/wav">
+    <p>Infelizmente o seu navegador nãoconsegue reproduzir audio.<a href="midia/mchariel02.mp3">clique aqui para baixar o arquivo mp3!</a></p>
+   </audio>
+   <video src="videos/pexels-mati-mango-6330773 (720p).mp4"></video>
+</body>
+</html>

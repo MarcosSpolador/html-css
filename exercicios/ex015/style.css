@@ -1,0 +1,16 @@
+@charset "TF-8";
+body{
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: chartreuse;
+    background-color: beige;
+}
+h2{
+    color: rgb(136, 59, 4) ;
+}
+p{
+    font-family: fantasy;
+}
