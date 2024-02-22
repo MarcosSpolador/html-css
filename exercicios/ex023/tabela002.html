@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+        thead, tfoot{
+            background-color: rgba(51, 50, 50, 0.816);
+            color: white;
+        }
+      
+        td.num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>USO DE TABELAS GRANDES</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES:
+        TABLE
+            THEAD
+                TR / TD / TH
+            TBODY
+                TR / TD / TH
+            TFOOT
+                TR / TD / TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th>POPULAÇÃO</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td >MINAS GERAIS</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>BAHIA</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>PARANÁ</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>RIO GRANDE DO SUL</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>PERNANBUCO</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>CEARA</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>PARÁ</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>SANTA CATARINA</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>GOIAS</td>
+                <td class="num">7 056 495</td>
+            </tr>
+            <tr>
+                <td>MARANHÃO</td>
+                <td class="num">6 775 805	</td>
+            </tr>
+            <tr>
+                <td>PARAIBA</td>
+                <td class="num">3 974 687</td>
+            </tr>
+            <tr>
+                <td>AMAZONAS</td>
+                <td class="num" >3 941 613</td>
+            </tr>
+            <tr>
+                <td>ESPIRITO SANTO</td>
+                <td class="num">3 833 712</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th>TOTAL DE HABITANTES</th>
+            <th>172.807.325</th>
+        </tfoot>
+    </table>
+</body> 
+</html>
