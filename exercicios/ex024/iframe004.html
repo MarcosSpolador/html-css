@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de Iframe</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 208, 154);
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            height: 600px;
+            width: 65vw;
+            border: 2px solid black;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(255, 145, 0);
+            font-size: larger;
+            background-color: black;
+        }
+       
+        
+    </style>
 </head>
 <body>
     <h1>Faça uma escolha</h1>
      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit officia inventore iure laborum quaerat earum enim temporibus, ab commodi blanditiis! Velit alias facere, minus similique voluptas excepturi magni. Excepturi, laboriosam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum totam inventore, rerum culpa assumenda necessitatibus error laborum id aliquid maxime ullam! Adipisci, consequatur deleniti quo nihil reprehenderit perferendis hic quod.</p>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab praesentium similique corporis repellendus doloremque. Saepe nam maxime blanditiis mollitia eos quisquam, molestias quidem possimus. Consequatur iste totam magni culpa eaque.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="pagina">Primeira Pagina</a></li>
+        <li><a href="paginas-extras/pag002.html" target="pagina">Segunda Pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="pagina">Terceira Pagina</a></li>
+    </ul>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab praesentium similique corporis.</p>
+
+    <iframe name="pagina" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sunt voluptatum inventore. Temporibus voluptatum repellat dicta sapiente fugit saepe ducimus tenetur, porro culpa nobis at itaque beatae est voluptas rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quis blanditiis consequatur magni, quo itaque dignissimos, voluptatibus veritatis error modi beatae ipsa aut sunt deserunt ullam molestiae fuga, laudantium architecto! <img src='imagens/semfundo.gif' alt=''></p> ">
+        <p>Infelizmente seu navegador nao e compativel com isto! </p>
+    </iframe>
+
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore impedit assumenda libero iste dolore vel fugit fugiat. Doloremque voluptatum quos est esse officia perspiciatis, eligendi libero tempore adipisci deleniti?</p>
 </body>
 </html>
