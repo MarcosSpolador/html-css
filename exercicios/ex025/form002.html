@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 002</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: cornflowerblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{ 
+            background-color: rgb(209, 224, 250);
+            margin: auto;
+            width: 250px;
+            margin-top: 20vh;
+            border-radius: 30px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.454);
+        }
+
+        form{
+            color: rgb(22, 74, 171);
+            text-align: center;
+            padding: 20px;
+        }
+        input{
+            background-color: rgba(168, 198, 248, 0.442);
+            border: none;
+            border-radius: 5px;
+            color: rgb(22, 74, 171);
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <div>
+        <form autocomplete="on" action="cadastro.php" method="post">
+            <p>
+                <label for="iusu">Usuário</label>
+                <input type="text" name="usu" id="iusu" required  maxlength="10" size="10" placeholder="nome do usuario" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" required minlength="4" maxlength="8" size="10" placeholder="digite a senha" autocomplete="current-password">
+            </p>
+            <p><input type="submit" value="Enviar" ></p>
+            <p><input type="reset" value="Apagar" ></p>
+        </form>
+    </div>
+</body>
+</html>
