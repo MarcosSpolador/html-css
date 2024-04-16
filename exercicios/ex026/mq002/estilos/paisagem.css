@@ -1,3 +1,5 @@
 @charset "UTF-8";
 
-/*Media Query para modo deitado*(LANDSCAPE)/
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+}

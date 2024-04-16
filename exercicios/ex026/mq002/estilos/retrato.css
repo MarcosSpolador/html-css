@@ -1,3 +1,5 @@
 @charset "UTF-8";
 
-/*Media Query para modo em pé (PORTRAIT)*/
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+}
