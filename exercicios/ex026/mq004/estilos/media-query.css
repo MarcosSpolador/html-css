@@ -5,7 +5,7 @@
 /*Typical Device Breakpoints Telas*/
 /*
 Pequenas: max-600px
-Celular:  max-600px até 768px
+Celular:  min-600px até 768px
 Tablet:   min-768px até 992px
 Desktop:  min-992px até 1200px
 Grandes:  min-1200px 
@@ -14,23 +14,48 @@ Grandes:  min-1200px
 
 @media print {
     
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main{
+
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    main h1{
+        color: black;
+        font-family:'Courier New', Courier, monospace;
+        font-size: larger;
+        text-shadow: none;
+    }
+
+    main::after{
+        content:'Este arquivo é um teste!';
+        
+    }
+
+    img#cell { display: none; }
+    img#tab { display: none; }
+    img#impre { display: block; }
+    img#desk { display: none; }
+    img#tv { display: none; }
 }
 
 
-@media screen and(min-width:768px) and (max-width:992px){
-     /*Tablet*/
+@media screen and (min-width:768px) and (max-width:992px){
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
-
-        img#cell { display: none; }
-        img#tablet { display: block; }
-        img#impre { display: none; }
-        img#desk { display: none; }
-        img#tv { display: none; }
-
-
+    
+    img#cell { display: none; }
+    img#tab { display: block; }
+    img#impre { display: none; }
+    img#desk { display: none; }
+    img#tv { display: none; }
 }
+    
+
 
 @media screen and (min-width:992px) and (max-width:1200px){
     /*Notebook*/
@@ -38,7 +63,7 @@ Grandes:  min-1200px
         background-image: url(../imagens/back-pc.jpg);
     }
     img#cell { display: none; }
-    img#tablet { display: none; }
+    img#tab { display: none; }
     img#impre { display: none; }
     img#desk { display: block; }
     img#tv { display: none; }
@@ -52,8 +77,12 @@ Grandes:  min-1200px
         background-image: url(../imagens/back-tv.jpg);
     }
 
+    main{
+        width: 700px;
+    }
+
     img#cell { display: none; }
-    img#tablet { display: none; }
+    img#tab { display: none; }
     img#impre { display: none; }
     img#desk { display: none; }
     img#tv { display: block; }

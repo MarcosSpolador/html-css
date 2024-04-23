@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-body , html{
+html{
     height: 100vh;
 }
 
@@ -43,7 +43,7 @@ img{
 }
 
 img#cell { display: block; }
-img#tablet { display: none; }
+img#tab { display: none; }
 img#impre { display: none; }
 img#desk { display: none; }
 img#tv { display: none; }
