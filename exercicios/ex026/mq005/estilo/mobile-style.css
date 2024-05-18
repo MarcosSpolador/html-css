@@ -22,10 +22,9 @@ header h1{
 }
 
 menu{
-    background-color: rgb(249, 170, 79);
-    display: none;   
+    display: none; 
+} 
     
-}
 menu > ul >li{ 
     list-style-type: none;
    
